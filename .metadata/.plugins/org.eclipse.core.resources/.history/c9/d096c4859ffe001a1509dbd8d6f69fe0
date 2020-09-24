@@ -1,0 +1,13 @@
+package wrapper_classes;
+
+public class WrappersEx {
+
+	public static void main(String[] args) {
+		
+		WrappersFloat f = new WrappersFloat();
+		
+		f.floatEx();
+
+	}
+}
+

@@ -1,0 +1,30 @@
+package wrapper_classes;
+
+public class WrappersEx {
+
+	public static void main(String[] args) {
+		
+		WrappersFloat f = new WrappersFloat();
+		WrappersDouble d = new WrappersDouble();
+		WrappersLong l = new WrappersLong();
+		
+		System.out.println("Float demo");
+		separator();
+		f.floatEx();
+		
+		separator();
+		System.out.println("Double demo");
+		separator();
+		d.DoubleEx();
+		
+		separator();
+		System.out.println("Long demo");
+		separator();
+
+	}
+	
+	public static void separator(){
+		System.out.println("--------------------------------------");
+	}
+}
+

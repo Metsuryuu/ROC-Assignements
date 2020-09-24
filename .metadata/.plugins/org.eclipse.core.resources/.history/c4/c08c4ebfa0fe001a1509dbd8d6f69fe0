@@ -1,0 +1,23 @@
+package wrapper_classes;
+
+public class WrappersEx {
+
+	public static void main(String[] args) {
+		
+		WrappersFloat f = new WrappersFloat();
+		WrappersDouble d = new WrappersDouble();
+		
+		System.out.println("Float demo");
+		separator();
+		f.floatEx();
+		
+		separator();
+		System.out.println("Double demo");
+
+	}
+	
+	public static void separator(){
+		System.out.println("--------------------------------------");
+	}
+}
+
