@@ -1,0 +1,142 @@
+1) What is RDBMS?
+	-Relational Database Managament System
+	-A DBMS meant for relational databases.
+	-Stores data using rows and columns to structure the data.
+		-Data stored in each table is related to each other.
+		-This structure allows queries to be run across multiple tables at once.
+2) Why SQL?
+	-SQL is a particularly useful language to handle the structured data presented by an RDBMS.
+	-In addition, SQL has become a standard across the world.
+	-Allows for:
+		-Data queries.
+		-Data manipulation (Insert, Update, Delete)
+		-Data definition (Schema creation and modification)
+		-Data access control. 
+3) What is Normalization? How many Normal Forms are there? (Explore till 3.5 Normal Form)
+	-Organizing the columns and tables of a database to ensure any dependencies are 
+	  properly enforced by integrity constrains.
+	-There are four normal forms:
+		-1st Normal Form.
+			-A single cell cannot hold multiple values.
+		-2nd Normal Form.
+			-Cannot contain partial dependency.
+			-Proper subset of candidate key cannot determine a non-prime attribute.
+		-3rd Normal Form.
+			-No transitive dependency for non-prime attributes.
+			-Non-prime attributes cannot be dependent on other non-prime attributes.
+		-Boyce Codd Normal Form (3.5 Normal Form).
+			-If every functional dependecy A->B, A must be a superkey in that table.
+4) SQL Data Types
+	-Exact numerics.
+		-bigint
+		-bit
+		-decimal
+		-int
+		-money
+		-numeric
+		-smallint
+		-smallmoney
+		-tinyint
+	-Approximate numerics.
+		-float
+		-real
+	-Date and time.
+		-date
+		-datetime2
+		-datetime
+		-datetimeoffset
+		-smalldatetime
+		-time
+	-Character strings.
+		-char
+		-text
+		-varchar
+	-Unicode character strings.
+		-nchar
+		-ntext
+		-nvarchar
+	-Binary strings.
+		-binary
+		-image
+		-varbinary
+	-Other.
+		-cursor
+		-hierarchyid
+		-sql_variant
+		-Spatial Geometry Types
+		-table
+		-row version
+		-uniqueidentifier
+		-xml
+		-Spatial Geography Types
+5) SQL Constraints
+	-NOT NULL
+		-A column cannot have a NULL value.
+	-UNIQUE	
+		-All values in a column are different.
+	-PRIMARY KEY
+		-Uniquely identifies each row in a table.
+	-FOREIGN KEY
+		-Uniquely identifies a row in another table.
+	-CHECK
+		-All values in a column satisfies a specific condition.
+	-DEFAULT
+		-Sets default value for a column when no value is specified.
+	-INDEX
+		-Used to create and retrieve data from the database very quickly.
+6) How to create table in SQL
+	-CREATE TABLE table_name(
+		column1 datatype,
+		column2 datatype,
+		column3 datatype
+	 );
+	-CREATE TABLE keywords followed by the column names and their respective datatypes
+	  separated by commas within paranthesis.	
+7) SQL Operators
+	-Arithmetic.
+		-Add (+)
+		-Subtract (-)
+		-Multiply (*)
+		-Divide (/)
+		-Modulo (%)
+	-Bitwise.
+		-Bitwise AND (&)
+		-Bitwise OR (|)
+		-Bitwise exclusive OR (^)
+	-Comparison.
+		-Equal to (=)
+		-Greater than (>)
+		-Less than (<)
+		-Greater than or equal to (>=)
+		-Less than or equal to (<=)
+		-Not equal to (<>)
+	-Compound.
+		-Add equals (+=)
+		-Subtract equals (-=)
+		-Multiply equals (*=)
+		-Divide equals (/=)
+		-Modulo equals (%=)
+		-Bitwise AND equals (&=)
+		-Bitwise exclusive equals (^-=)
+		-Bitwise OR equals (|*=)
+	-Logical.
+		-ALL
+			-True if all of the subquery values meet the condition.
+		-AND
+			-True if all conditions are true.
+		-ANY
+			-True if any of the subquery values meet the condition.
+		-BETWEEN
+			-True if the operand is within the range of comparisons.
+		-EXISTS
+			-True if the subquery returns one or more records.
+		-IN
+			-True if the operand is equal to one of a list of expressions.
+		-LIKE
+			-True if the operand matches a pattern.
+		-NOT
+			-Display a record if conditions are not true.
+		-OR
+			-True if any of the conditions are true.
+		-SOME
+			-True if any of the subquery values meet the condition.
